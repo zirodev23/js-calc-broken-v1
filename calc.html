@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="num1" />
+    <input type="text" id="num2" />
+    <button id="btn">Rēķināt</button>
+    <p id="output"></p>
+
+    <script>
+      let num1In = document.getElementById("number1");
+      let operatorIn = document.getElementById("operator");
+      let num2In = document.getElementById("number2");
+
+      btn.addEventListener("click", processClick);
+
+      function handleClick() {
+        let num1 = parseInt(num1Input.value);
+        let num2 = parseInt(num2Input.value);
+        let operator = operatorInput.value;
+
+        if (op == "+") {
+          result = `Rezultāts: ${n1 + n2}`;
+        }
+        if (op == "-") {
+          result = `Rezultāts: ${n1 - n2}`;
+        }
+        if (op == "*") {
+          result = `Rezultāts: ${n1 * n2}`;
+        }
+        if (op == "/") {
+          result = `Rezultāts: ${n1 / n2}`;
+        }
+
+        output = result;
+      }
+    </script>
+  </body>
+</html>
